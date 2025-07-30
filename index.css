@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.home a {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.home-ops {
+  display: flex;
+  gap: 2rem;
+}
+
+.home-ops a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 1.8rem;
+}
+
+/* Hover underline effect */
+.home-ops a,
+.home a {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.home-ops a::after,
+.home a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0%;
+  height: 2px;
+  background-color: #1a1a1a;
+  transition: width 0.3s ease;
+}
+
+.home-ops a:hover::after,
+.home a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100%;
+}
+
+.outer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.inner-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text {
+  margin-top: 4rem;
+  max-width: 500px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.int {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.des {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+.content {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.work-btn {
+  height: 1.8rem;
+  width: 12rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #5f5a5a;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+.work-btn a {
+  text-decoration: none;
+  color: #5f5a5a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.work-btn:hover {
+  background-color: #5f5a5a;
+  transform: translateY(-2px);
+}
+
+.work-btn:hover a {
+  color: #ffffff;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .outer-image {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .des {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 0.95rem;
+  }
+
+  .work-btn {
+    width: 10rem;
+    height: 2.2rem;
+    margin: 1.5rem auto 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .home-ops {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FAFAFA;
+}
+
+/* Heading */
+.heading {
+  color: #1A1A1A;
+  margin-top: 6rem;
+}
+
+.main-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333333;
+  margin-top: 0.85rem;
+}
+
+/* Main Hero Container */
+.Hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  padding: 0 2rem 10rem;
+  color: #333333;
+  flex-wrap: nowrap;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1;
+  max-width: 18rem;
+}
+
+.con-head {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.mail {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.gap {
+  margin-top: 0.5rem;
+}
+
+.phone-location p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Vertical Divider Line */
+.line {
+  height: 18rem;
+  width: 0.08rem;
+  background-color: #333333;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  max-width: 18rem;
+}
+
+.contact-head {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.reciver {
+  height: 2rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  border: 0.09rem solid #1A1A1A;
+  border-radius: 0.4rem;
+  background-color: #FAFAFA;
+}
+
+.message {
+  height: 6rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  border: 0.09rem solid #1A1A1A;
+  border-radius: 0.4rem;
+  background-color: #FAFAFA;
+  resize: none;
+}
+
+.send {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1A1A;
+  color: #FAFAFA;
+  border-radius: 0.4rem;
+  margin-top: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.send:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 90%;
+  }
+
+  .reciver,
+  .message,
+  .send {
+    width: 100%;
+  }
+}
